@@ -1,4 +1,4 @@
-[{"question":"what is the largest animal in the world",
+[{"question":"Which of the following models is NOT a generative AI model",
 "answers":[
     {"text":"BERT (Bidirectional Encoder Representations from Transformers)", "correct":false}, 
     {"text":"CNN (Convolution Neural Network)", "correct":true},
