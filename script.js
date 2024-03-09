@@ -64,7 +64,7 @@ function showScore(){
     resetState();
     questionElement.innerHTML=`You scored ${score} out of ${questions.length}!`;
     nextbutton.innerHTML= 
-        `<a class="anchor-link" href="landingPage.html">Play Again</a> `;
+        `<a class="anchor-link" href="index.html">Play Again</a> `;
     nextbutton.style.display="block";
 
 }

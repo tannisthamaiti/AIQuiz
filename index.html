@@ -3,46 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
     <style>
     .logo{display: block;
-        margin-bottom: 50px;
-        margin-top: 2%;
-        width: 196px;
-        position:sticky;
-        top:30px;
-    }
-    .box{margin-top: 0 0 2rem 0;
-    padding: 30px 50px;
-    position: relative;}
-    .anchor-link{
-        text-decoration: None;
-        color:white;
-    }
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 80px;}
+    p {
+    margin-top: 0;
+    margin-bottom: 1rem;}
+    .box {
+    border-radius: 4px;
+    flex: 1 0 40%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    height: 100vh;
+    margin-top: 0 0 2rem 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    position: relative;
+}
+.btn-primary{background-color: #171717;
+    border: none;
+    box-shadow: 1px 2px 4px 0 rgba(0,0,0,.2);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    line-height: 1.67;
+    margin: 25px 0 0;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color .3s cubic-bezier(.455,.03,.515,.955), color .3s cubic-bezier(.455,.03,.515,.955);
+}
+.wave-1 {
+    background-image: url(img/ribbon_1.png);
+}
+@media screen {
+    
+}media
     </style>
 </head>
 <body>
     <div class="box">
     <div><img src="img/logo.png" alt="Liftmap" class="logo"></div>
-    <div class="app">
-        <h1>
-            AI and python Quiz
-        </h1>
-        <div class="quiz">
-            <h2 id="question">
-                Question goes here
-            </h2>
-            <div id="answer-buttons">
-                <button class="btn"> Answer 1</button>
-                <button class="btn"> Answer 2</button>
-                <button class="btn"> Answer 3</button>
-                <button class="btn"> Answer 4</button>
-            </div>
-            <button id="next-btn">Next</button>
-        </div>
+    <h1>Discover how your experimentation program stacks up!</h1>
+    <p>
+        This 7-minute quiz is designed to help you determine which phase of experimentation maturity your organization is currently in, and provide proven recommendations and next steps for scaling experimentation at your organization.
+    </p>
+    <h3>What will you get?</h3>
+    <p>
+        In addition to receiving your experimentation maturity benchmark, you will get actionable insights and a resource package to take your experimentation program to the next level.
+    </p>
+    <a href="quiz.html">
+    <button id="nextPage" class="btn-primary">Get Started!</button>
+    </a>
+    <div class="wave-1"></div>
     </div>
-</div>
-    <script type="module" src="script.js"></script>
 </body>
+
 </html>
