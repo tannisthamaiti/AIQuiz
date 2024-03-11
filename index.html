@@ -23,7 +23,7 @@
     font-weight: bold;
     }
     textarea{
-        width: 60%;
+    width: 60%;
     height: 100px;
     padding: 5px;
     margin-bottom: 25px;
@@ -89,9 +89,17 @@
     background-image: url(img/ribbon_1.png);
 }
 
-@media screen {
-    
+@media screen and (max-width: 600px){
+    input[type=button]{
+        width:100%;
+    }
+    input[type=text]{
+        width: 100%;}
+    textarea{
+        width:100%;
+    }
 }
+
     </style>
     <script src="setting.js"></script>
 </head>
