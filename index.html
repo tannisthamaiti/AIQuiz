@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <style>
+    input[type=text]{
+    width: 60%;
+    height: 25px;
+    padding: 5px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    color: #4f4f4f;
+    font-size: 16px;
+    border-radius: 5px;
+    }
+    label{
+    color: #464646;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 14px;
+    font-weight: bold;
+    }
+    input[type=button]{
+    font-size: 16px;
+    background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+    border: 1px solid #e5a900;
+    color: #4E4D4B;
+    font-weight: bold;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 5px;
+    margin-bottom:10px;
+    padding: 10px 0;
+    outline:none;
+    }
+    input[type=button]:hover{
+    background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+    }
     .logo{display: block;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    width: 80px;}
+    
+    margin-top: 20px;
+    margin-left:200px;
+    width: 120px;}
     p {
     margin-top: 0;
     margin-bottom: 1rem;}
@@ -23,6 +57,7 @@
     margin-right: 10px;
     padding: 10px 20px;
     position: relative;
+    text-align: center;
 }
 .btn-primary{background-color: #171717;
     border: none;
@@ -34,34 +69,40 @@
     line-height: 1.67;
     margin: 25px 0 0;
     text-align: center;
-    width: 100%;
+    width: 60%;
     cursor: pointer;
     transition: background-color .3s cubic-bezier(.455,.03,.515,.955), color .3s cubic-bezier(.455,.03,.515,.955);
 }
 .wave-1 {
     background-image: url(img/ribbon_1.png);
 }
+
 @media screen {
     
-}media
+}
     </style>
+    <script src="setting.js"></script>
 </head>
 <body>
     <div class="box">
     <div><img src="img/logo.png" alt="Liftmap" class="logo"></div>
-    <h1>Discover how your experimentation program stacks up!</h1>
-    <p>
-        This 7-minute quiz is designed to help you determine which phase of experimentation maturity your organization is currently in, and provide proven recommendations and next steps for scaling experimentation at your organization.
-    </p>
-    <h3>What will you get?</h3>
-    <p>
-        In addition to receiving your experimentation maturity benchmark, you will get actionable insights and a resource package to take your experimentation program to the next level.
-    </p>
-    <a href="quiz.html">
-    <button id="nextPage" class="btn-primary">Get Started!</button>
+    <h1>LWT AI Quiz</h1>
+    <form id="form_id" method="post" name="myform">
+        
+        <!-- <label>Name :</label> -->
+        <input id="name" name="name" placeholder="Name" type="text">
+        <!-- <label>Email :</label> -->
+        <input id="email" name="email" placeholder="Valid Email" type="text">
+        <!-- <label>Contact No. :</label> -->
+        <input id="contact" name="contact" placeholder="Contact No." type="text">
+        <input onclick="myfunction()" type="button" value="Submit">
+        
+        </form>
+        <a href="quiz.html">
+    <button id="nextPage" class="btn-primary">Get Started on your Quiz!</button>
     </a>
     <div class="wave-1"></div>
     </div>
 </body>
-
+    
 </html>
