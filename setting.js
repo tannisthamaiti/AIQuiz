@@ -1,11 +1,19 @@
 // Submit form with id function
 function myfunction() {
-    var name = document.getElementById("name").value;
+    var name = document.getElementById("fname").value;
     var email = document.getElementById("email").value;
     var contact = document.getElementById("contact").value;
-    if (validation()) // Calling validation function
-    {
-    document.getElementById("form_id").action = "success.php"; // Setting form action to "success.php" page
-    document.getElementById("form_id").submit(); // Submitting form
-    }
+    var contact = document.getElementById("w3review").value;
+    console.log(name);
+    const rows = [
+        ["name1", "city1", "some other info"],
+        ["name2", "city2", "more info"]
+    ];
+    
+    let csvContent = "data:text/csv;charset=utf-8,";
+    
+    rows.forEach(function(rowArray) {
+        let row = rowArray.join(",");
+        csvContent += row + "\r\n";
+    });
     }
