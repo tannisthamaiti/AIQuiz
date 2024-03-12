@@ -1,1 +1,1 @@
-# AIQuiz
+# AI Quiz
